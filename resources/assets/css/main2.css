@@ -1,5 +1,5 @@
 #body_type{
-    margin-top:30px;
+    margin-top:60px;
     text-align: center;
 }
 #posts{
@@ -10,4 +10,35 @@
 #card{
     margin-left:30px;
     margin-right:30px;
+}
+
+#searchbox
+{
+    float:right;
+    background-image: linear-gradient(#fff, #111111);
+    margin-right:290px;
+    margin-top:57px;
+    width: 240px;
+    height: 20px;
+    padding: 10px;
+    overflow: hidden; /* Clear floats */
+       
+}
+#search,
+#submit {
+    float: left;
+}
+
+#search {
+    height: 17px;
+    width: 160px;
+
+}
+
+/* ----------------------- */
+
+#submit
+{
+    
+    float:right;
 }
