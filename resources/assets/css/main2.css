@@ -18,8 +18,8 @@
     background-image: linear-gradient(#fff, #111111);
     margin-right:200px;
     margin-top:82px;
-    width: 240px;
-    height: 20px;
+    width: 140px;
+    height: 13px;
     padding: 10px;
     overflow: hidden; /* Clear floats */
        
@@ -30,8 +30,8 @@
 }
 
 #search {
-    height: 17px;
-    width: 160px;
+    height: 10px;
+    width: 80px;
 
 }
 
@@ -81,3 +81,17 @@
     color: #ADF;
     font: 10px 'BlackJackRegular';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
