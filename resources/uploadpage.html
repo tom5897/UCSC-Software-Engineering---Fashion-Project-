@@ -1,1 +1,32 @@
-uploadpage
+<script type="text/javascript">
+	function previewFile(){
+		var preview = document.querySelector('img'); //selects the query named img
+		var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+		var reader  = new FileReader();
+
+		reader.onloadend = function(){
+			preview.src = reader.result;
+		}
+		if(file){
+			reader.readAsDataURL(file); //reads the data as a URL
+		}
+		else{
+			preview.src = "";
+		}
+	}
+	previewFile();  //calls the function named previewFile()
+</script>
+
+<input type="file" onchange="previewFile()"><br> 
+<!-- If possible, change button in the preview image box -->
+<img src="" width="300" height="400" alt="Image is not uploaded yet">
+
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
+<textarea name="textfield" cols="50" rows="30" style="width: 1000px; height: 200px;"></textarea>
