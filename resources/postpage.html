@@ -1,14 +1,21 @@
 
 <!DOCTYPE HTML>
 
+
 <html>
     <head>
         <title>adattarsi</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/main2.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
 
 	<body>
@@ -20,15 +27,43 @@
 		        <a href="#"><img src="./images/my_page.png" class="morph pic" style="position:absolute;  top: 90px; right:120px;" width="80" height="40"></a>
 		        <form id="searchbox" action="">
 		            <input id="search" type="text" placeholder="Search...">
-		                <input id="submit" type="submit" value="Search">
+		            <input id="submit" type="submit" value="Search">
 		        </form>
 		    </div>
 		</div>
 
-		<div id="post">
-			<div id="image"style="border-bottom: solid 1px #DADADA;">
-				<a href="#"><img src="./images/iu.jpg" align="center" width="130" height="100"></a>
+		<div class="media" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:10px;">
+  			<div class="media-left media-middle">
+    			<a href="#">
+      				<img class="media-object" src="./images/iu.jpg" alt="iu">
+    			</a>
+  			</div>
+  			<div class="media-body" style="overflow:scroll; width:300px; height:150px; padding:10px; background-color:white;">
+				<ol>
+					<div>
+						<li>댓글1</li>
+					</div>
+					<br/>
+					<div>
+						<li>댓글2</li>
+					</div>
+					<br/>
+					<div>
+						<li>댓글3</li>
+					</div>
+					<br/>
+				</ol>
+
+				가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하<br />
+				<br />
+				<form action="url" method="GET">
+					comment
+					<textarea rows="1" cols="50"></textarea>
+				<br />
+				<input type="submit" />
+				</form>
 			</div>
+			
 		</div>
 	</body>
 </html>
