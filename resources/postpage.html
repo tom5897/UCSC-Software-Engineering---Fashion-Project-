@@ -1,126 +1,192 @@
-
-<!DOCTYPE HTML>
-
-
-<html>
-    <head>
-        <title>adattarsi</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>addattarsi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<style>
+			#post-container{
+				float: none;
+			}
+			#post-left {
+				width: 450px;
+				height: 650px;
+				float: left;
+			}
+			#post-right {
+				width: 380px;
+				height: 650px;
+				float: right;
+			}
+			#empty-element {
+				clear: both;
+				height: 0;
+				overflow: hidden;
+			}
+			#comment-wrapper {
+				width: 380px;
+				height: auto;
+				margin-bottom: 5px;
+			}
+			#comment-p {
+				width: 380px;
+			}
+		</style>
+	</head>
 	<body>
-
-		<div id="total"><!-- 헤더 래퍼 -->
-		    <div id="header"style="border-bottom: solid 1px #DADADA;">
-		        <a href="index.html"><img src="./images/logo.png" width="380" height="120"></a>
-		        <a href="#"><img src="./images/logout.png" class="morph pic" style="position:absolute; top: 90px; right:30px;  " width="80" height="40"></a>
-		        <a href="#"><img src="./images/my_page.png" class="morph pic" style="position:absolute;  top: 90px; right:120px;" width="80" height="40"></a>
-		        <form id="searchbox" action="">
-		            <input id="search" type="text" placeholder="Search...">
-		            <input id="submit" type="submit" value="Search">
-		        </form>
-		    </div>
-		</div>
-
-		<div class="media" style="padding-top:50px; padding-right:10px; padding-bottom:5px; padding-left:70px;">
-  			<div class="media-left media-middle">
-				<div>
-					<a href="#">
-						<img class="media-object" src="./images/iu.jpg" alt="iu">
-					</a>
-					<div style="padding:10px; text-align:right;">	
-						<button type="submit" name="edit">edit</button>
-						<button type="reset" name="like">like</button>
+		<div class="container">
+			<h2>Post page</h2>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Post thumbnail</button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-body" style="float:none">
+							<div id="post-container">
+								<div id="post-left">
+									<img src="./images/iu.jpg" width="450" height="650" >	
+								</div>
+								<div id="post-right">
+									<div style="margin-bottom:10px;">
+										<img src="./images/hamburger.jpg" width="30px" height="30px">
+										작성자아이디
+									</div>
+									<div class="well well-lg" style="height:200px; margin-bottom:10px; overflow-y:auto;" >
+										게시글 내용
+									</div>
+									<div class="btn-group" role="group">
+										<button class="btn btn-default" type="submit" name="edit">
+											<span class="badge"><span class="glyphicon glyphicon-pencil"></span></span> edit
+										</button>
+										<button class="btn btn-default" type="reset" name="like">
+											<span class="badge"><span class="glyphicon glyphicon-thumbs-up"></span></span> 1241
+										</button>
+									</div>
+									<div style="overflow-y:auto; width:380px; height:300px; margin-top:10px; margin-bottom:10px; padding-top:10px; padding-bottom:5px; border-top:1px solid grey; border-bottom:1px solid grey;">
+										<div id="comment-wrapper">
+											<div style="float:left; margin:3px; height:100%;">
+												<img src="./images/hamburger.jpg" width="30px" height"30px">
+											</div>
+											<div id="comment-p">
+												<p>comment</p>
+											</div>
+											<div>
+												<time>15.08.21</time>
+											</div>
+											<div id="empty-element"></div>
+										</div>
+										<div id="comment-wrapper">
+											<div style="float:left; margin:3px; height:100%;">
+												<img src="./images/hamburger.jpg" width="30px" height"30px">
+											</div>
+											<div id="comment-p">
+												<p>comment</p>
+											</div>
+											<div>
+												<time>15.08.21</time>
+											</div>
+											<div id="empty-element"></div>
+										</div>
+										<div id="comment-wrapper">
+											<div style="float:left; margin:3px; height:100%;">
+												<img src="./images/hamburger.jpg" width="30px" height"30px">
+											</div>
+											<div id="comment-p">
+												<p>commentzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+											</div>
+											<div>
+												<time>15.08.21</time>
+											</div>
+											<div id="empty-element"></div>
+										</div>
+										<div id="comment-wrapper">
+											<div style="float:left; margin:3px; height:100%;">
+												<img src="./images/hamburger.jpg" width="30px" height"30px">
+											</div>
+											<div id="comment-p">
+												<p>comment</p>
+											</div>
+											<div>
+												<time>15.08.21</time>
+											</div>
+											<div id="empty-element"></div>
+										</div>
+										
+										<div id="comment-wrapper">
+											<div style="float:left; margin:3px; height:99%;">
+												<img src="./images/hamburger.jpg" width="30px" height"30px">
+											</div>
+											<div id="comment-p">
+												<p>comment</p>
+											</div>
+											<div>
+												<time>15.08.21</time>
+											</div>
+											<div id="empty-element"></div>
+										</div>
+										
+									</div>
+									<div>
+										<form action="#" method="GET">
+											<input type="text" class="form-control" placeholder="Comment" aria-describedby="sizing-addon2" style="width:340px; float:left;">
+											<button class="btn btn-default" type="submit" name="comment" style="float:right;">
+												<span class="glyphicon glyphicon-comment"></span>
+											</button>
+										</form>
+									</div>
+								</div>
+								<div id="empty-element"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-  			<div class="media-body" style="overflow:scroll; width:300px; height:150px; padding:10px; vertical-align:middle;">
-				<ul>
-					<div>
-						<li>정말 예뻐요!!</li>
-					</div>
-					<br/>
-					<div>
-						<li>솔직히 미쳤다</li>
-					</div>
-					<br/>
-					<div>
-						<li>01030624019 전화주세요</li>
-					</div>
-					<br/>
-				</ul>
-
-				가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하<br />
-				<br />
-				<form class="navbar-form navbar-left" role="comment" action="url" method="GET">
-					<div class="form-group">
-						<input type="text" size="45"  class="form-control" placeholder="comment">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				 </form>
-			</div>
-		</div>
-	</body>
+		</body>
 </html>
 
-<!--
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-		<title>adattarsi</title>
-	</head>
-	<body>
-		<h1>
-			<a href="./index.html" title="adattarsi" target="_self">adattarsi</a>
-		</h1>
-		<a href="./index.html" title="로그아웃" target="_self">로그아웃</a>
-		<br/>
-		<img src="./images/11811343_868032563276193_2938643858743708391_n.jpg" alt="햄버거" width="200" height="200" />
-		<div>
-			<ol>
-				<form action="url" method="GET">
-					<input type="button" value="좋아요"/>
-				</form>
-				<a href="./uploadpage.html" title="게시글수정" target="_self">수정</a>
-			</ol>
-		</div>
-		<div>
-			<div style="overflow:scroll; width:300px; height:150px; padding:10px; background-color:skyblue;">
-				<ol>
-					<div>
-						<li>댓글1</li>
-					</div>
-					<br/>
-					<div>
-						<li>댓글2</li>
-					</div>
-					<br/>
-					<div>
-						<li>댓글3</li>
-					</div>
-					<br/>
-				</ol>
 
-				가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하<br />
-				<br />
+<!--
+<div class="media" >
+	<div class="media-left media-middle">
+		<div>
+			<a href="#">
+				<img class="media-object" src="./iu.jpg" alt="iu" width="max:100%" height="100">
+			</a>
+			<div style="padding:10px; text-align:right;">	
+				<button type="submit" name="edit">edit</button>
+				<button type="reset" name="like">like</button>
 			</div>
-			<form action="url" method="GET">
-				comment
-				<textarea rows="1" cols="100"></textarea>
-				<br />
-				<input type="submit" />
-			</form>
 		</div>
-	</body>
-</html> -->
+	</div>
+	<div class="media-body" style="overflow:scroll; width:300px; height:150px; padding:10px; vertical-align:middle;">
+		<ul>
+			<div>
+				<li>정말 예뻐요!!</li>
+			</div>
+			<br/>
+			<div>
+				<li>솔직히 미쳤다</li>
+			</div>
+			<br/>
+			<div>
+				<li>01030624019 전화주세요</li>
+			</div>
+			<br/>
+		</ul>
+
+		가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하<br />
+		<br />
+		<form class="navbar-form navbar-left" role="comment" action="url" method="GET">
+			<div class="form-group">
+				<input type="text" size="45"  class="form-control" placeholder="comment">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+</div>
+-->
