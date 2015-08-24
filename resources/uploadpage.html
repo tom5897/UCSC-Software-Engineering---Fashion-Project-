@@ -1,6 +1,24 @@
+<html>
+    <head>
+        <title>adattarsi</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main2.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    </head>
+<body>
+
+<div id="header"style="border-bottom: solid 1px #DADADA;">
+    <a href="index.html"><img src="./images/logo.png" width="380" height="120"></a>
+    </div>
+<a href="#"><img src="./images/register.png" class="morph pic" style="position:absolute;  top: 80px; right:120px;" width="80" height="40"></a>
+<a href="#"><img src="./images/login.png" class="morph pic" style="position:absolute;  top: 80px; right:30px;" width="80" height="40"></a>
+<br>
+
 <script type="text/javascript">
 	function previewFile(){
-		var preview = document.querySelector('img'); //selects the query named img
+		var preview = document.querySelector('.img_file'); //selects the query named img
 		var file    = document.querySelector('input[type=file]').files[0]; //sames as here
 		var reader  = new FileReader();
 
@@ -16,17 +34,23 @@
 	}
 	previewFile();  //calls the function named previewFile()
 </script>
-
-<input type="file" onchange="previewFile()"><br> 
+<div style="text-align:center;">
+<input type="file" onchange="previewFile()" ><br>
 <!-- If possible, change button in the preview image box -->
-<img src="" width="300" height="400" alt="Image is not uploaded yet">
+<input type="image" src="" class="img_file" width="300" height="400" alt="No Image!!">
+<textarea name="textfield" cols="50" rows="30" style="width: 300px; height: 400px;" placeholder="내용을 입력해라 닝겐들아"></textarea>
 
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<input type="image" class="tilt pic" src="./images/iu.jpg"  width="110" height=130" alt="car">
-<textarea name="textfield" cols="50" rows="30" style="width: 1000px; height: 200px;"></textarea>
+<br>
+Select Categories!!
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+<input type="submit" value="작성완료">
+</div>
+</body>
+</html>
