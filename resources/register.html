@@ -8,84 +8,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main2.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    </head>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/core.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="assets/css/jumbotron.css" rel="stylesheet">
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-<body>
+	</head>
 
-<div id="total"><!-- 헤더 래퍼 -->
-    <div id="header"style="border-bottom: solid 1px #DADADA;">
-        <a href="index.html"><img src="./images/logo.png" width="380" height="120"></a>
-
-    </div>
-    
-    
-    <!DOCTYPE HTML>
-    <html>
-        <head>
-            <title>Flask Intro - login page</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
-                    </head>
-    
-        <body>
-            
-            
-           
-            
-            
-            
-            <div class="form">
-                
-                
-                <div class="container">
-                    <div id="signup">
-                        <h1>Sign Up for Free</h1>
-                        
-                        <form action="/register/post" method="post">
-                            
-                            <div class="top-row">
-                                
-                                <div class="field-wrap">
-                                    <input type="text" placeholder="ID"/>
-                                </div>
-                            </div>
-                            
-                        
-                            
-                            <div class="field-wrap">
-                                <input type="text" placeholder="Password"/>
-                            </div>
-                            
-                            <div class="field-wrap">
-                                <input type="text" placeholder="Age"/>
-                            </div>
-                            
-                            
-                            <div class="field-wrap">
-                                <input type="text" placeholder="E-Mail Adress"/>
-                            </div>
-                            
-                          
-                            
-                            <button type="submit" class="button button-block"/>Get Started</button>
-                            
-                        </form>
-                        
-                    </div>
-                    
-                    
-                </div><!-- tab-content -->
-                
-            </div> <!-- /form -->
-        </body>
-    </html>
-
-
-
-
-
-</body>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Adattarsi</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" placeholder="Id" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Sign in</button>
+				</form>
+			</div><!--/.navbar-collapse -->
+		</div>
+		</nav>
+		<div class="form">
+			<div class="container">
+				<div id="signup">
+					<h1>Sign Up for Free</h1>
+					<form action="/register/post" method="post">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="ID">
+						</div>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Password">
+						</div>
+						<div class="input-group" >
+							<input type="text" class="form-control" placeholder="Age">
+						</div>
+						<div class="input-group" >
+							<input type="text" class="form-control" placeholder="E-Mail Address">
+						</div>
+						<button class="btn btn-default" type="submit" name="signin">Get Started</button>
+					</form>
+				</div>
+			</div><!-- tab-content -->
+		</div> <!-- /form -->
+	</body>
 </html>
-
 
