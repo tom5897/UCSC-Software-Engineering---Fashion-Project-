@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<CTYPE HTML>
 
 <html>
 	<head>
@@ -46,18 +46,36 @@
 		
 		<script type="text/javascript">
 			function previewFile(){
+				var _valid = ["jpg", "jpeg", "bmp", "gif", "png"]; 
 				var preview = document.querySelector('.img_file'); //selects the query named img
 				var file    = document.querySelector('input[type=file]').files[0]; //sames as here
 				var reader  = new FileReader();
 
-				reader.onloadend = function(){
-					preview.src = reader.result;
+				if(file != null){
+					for(var i=0;i<_valid.length;i++){
+						console.log(file.name);
+						var isValid = false;
+						var name = file.name;
+						var type = _valid[i];
+						if(name.substr(name.length-type.length,type.length).toLowerCase() == _valid[i]){
+							isValid = true;
+							break;
+						}
+					}
 				}
-				if(file){
-					reader.readAsDataURL(file); //reads the data as a URL
+				if(isValid){
+					reader.onloadend = function(){
+                                        	preview.src = reader.result;
+                               		}
+                            		if(file){
+                                        	reader.readAsDataURL(file); //reads the data as a URL
+                               	 	}
+                                	else{
+                                        	preview.src = "";
+                                	}
 				}
 				else{
-					preview.src = "";
+					alert("Wrong File Type! Only jpg(jpeg), bmp, gif, png files are allowed");
 				}
 			}
 			previewFile();  //calls the function named previewFile()
@@ -74,14 +92,14 @@
 				<textarea class="form-control"name="textfield" style="width:435px; height:200px;" placeholder="Contents"></textarea>
 				<div>
 					<h3>Categories</h3>
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
-					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height=60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
+					<input type="image" class="tilt pic" src="./images/iu.jpg"  width="50" height="60">
 				</div>
 			</div>
 		</div>
