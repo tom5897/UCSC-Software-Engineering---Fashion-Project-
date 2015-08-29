@@ -1,0 +1,77 @@
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>adattarsi</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main2.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/core.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="assets/css/jumbotron.css" rel="stylesheet">
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Adattarsi</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" placeholder="Id" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Sign in</button>
+				</form>
+			</div><!--/.navbar-collapse -->
+		</div>
+		</nav>
+
+		<!-- 회원가입 -->
+		<div class="well well-lg" style="margin:20px; margin-top:50px;">
+			<div class="form">
+				<div class="container">
+					<div id="signup">
+						<h1>Sign Up for Free</h1>
+						<form action="/register/post" method="post">
+							<div class="input-group" style="padding:5px;">
+								<input name="ID" type="text" class="form-control" placeholder="ID">
+							</div>
+							<div class="input-group"style="padding:5px;">
+								<input name="Password" type="password" class="form-control" placeholder="Password">
+							</div>
+							<div class="input-group" style="padding:5px;">
+								<input name="Age" type="text" class="form-control" placeholder="Age">
+							</div>
+							<div class="input-group" style="padding:5px;">
+								<input name="E-Mail" type="text" class="form-control" placeholder="E-Mail Address">
+							</div>
+							<div style="padding:5px;">
+								<button class="btn btn-default" type="submit" name="signin">Get Started</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><!-- tab-content -->
+		</div> <!-- /form -->
+	</body>
+</html>
+
