@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Flask - sign-in page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>make your id</h1>
+      <br>
+      <form action="{{ url_for('register_post') }}" method="post">
+        <input type="text" name="userid" value="{{
+          request.form.userid }}">
+         <input type="password" name="password" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="submit">
+      </form>
+    </div>
+  </body>
+</html>
