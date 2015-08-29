@@ -1,0 +1,88 @@
+#body_type{
+    margin-top:20px;
+    text-align: center;
+}
+#posts{
+    margin-top:20px;
+    text-align: center;
+}
+
+#card{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+#searchbox
+{
+    float:right;
+    background-image: linear-gradient(#fff, #111111);
+    margin-right:200px;
+    margin-top:82px;
+    width: 140px;
+    height: 13px;
+    padding: 10px;
+    overflow: hidden; /* Clear floats */
+       
+}
+#search,
+#submit {
+    float: left;
+}
+
+#search {
+    height: 10px;
+    width: 80px;
+
+}
+
+/* ----------------------- */
+
+#submit
+{
+    
+    float:right;
+}
+
+/*TILT*/
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+/*MORPH*/
+.morph {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.morph:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#burning {
+    color: #ADF;
+    font: 10px 'BlackJackRegular';
+}
+
+
+
+
+
